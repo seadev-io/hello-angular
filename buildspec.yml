@@ -1,7 +1,7 @@
 version: 0.1
 environment_variables:
     plaintext:
-        S3_BUCKET: "http://hello-world.seadev.io.s3-website-us-west-2.amazonaws.com"
+        S3_BUCKET: "hello-world.seadev.io"
         BUILD_ENV: "prod"
 phases:
     install:
