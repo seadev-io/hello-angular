@@ -1,7 +1,7 @@
 version: 0.1
 environment_variables:
     plaintext:
-        S3_BUCKET: "seadev-us-west"
+        S3_BUCKET: "hello-world.seadev.io"
         BUILD_ENV: "prod"
 phases:
     install:
