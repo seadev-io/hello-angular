@@ -1,18 +1,24 @@
-import { NgModule, NO_ERRORS_SCHEMA  } from '@angular/core';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { HeaderComponent } from './header/header.component';
+import { ModuleWithProviders, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
+import {
+  HeaderComponent,
+} from './components';
+
+
+const COMPONENTS = [
+  HeaderComponent,
+];
 
 @NgModule({
-  declarations: [
-    HeaderComponent
-  ],
+  declarations: [ ...COMPONENTS ],
   imports: [
     MDBBootstrapModule.forRoot()
   ],
-  exports: [
-    HeaderComponent
-  ],  
+  exports: [ ...COMPONENTS, MDBBootstrapModule ],  
   providers: [],
   schemas: [ NO_ERRORS_SCHEMA ]
 })

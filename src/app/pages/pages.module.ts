@@ -5,6 +5,7 @@ import { ThemeModule } from '../@theme/theme.module';
 
 import { PagesComponent } from './pages.component';
 import { PagesRoutingModule } from './pages-routing.module';
+import { LandingComponent } from './landing/landing.component';
 
 const PAGES_COMPONENTS = [
   PagesComponent,
@@ -16,8 +17,12 @@ const PAGES_COMPONENTS = [
     ThemeModule,
     PagesRoutingModule
   ],
+  exports: [
+    ThemeModule
+  ],  
   declarations: [
     ...PAGES_COMPONENTS,
+    LandingComponent,
   ]
 })
 export class PagesModule { }
