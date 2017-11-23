@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "hello-angular"
+    "name": "mdb-test-angular"
   },
   "apps": [
     {
-      "root": "src",
-      "outDir": "dist",
+      "root": "demo/src",
+      "outDir": "demo/dist",
       "assets": [
         "assets",
         "favicon.ico"
@@ -19,7 +19,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+          "../../node_modules/font-awesome/scss/font-awesome.scss",
+          "../../src/scss/bootstrap/bootstrap.scss",
+          "../../src/scss/mdb-free.scss",
+          "./styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -54,7 +57,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "component": {}
   }
 }
